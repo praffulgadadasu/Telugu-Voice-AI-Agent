@@ -59,7 +59,7 @@ graph TD
    python main.py
    ```
 5. **Connect to Twilio**:
-   Use Cloudflare or LocalTunnel to expose port 8000 to the web, and paste the URL into your Twilio Webhook settings with the endpoint `/twilio/incoming`.
+   Use Cloudflare or LocalTunnel to expose port 8000 to the web, and paste the URL into your Twilio Webhook settings with the endpoint `npx -y cloudflared tunnel --url http://localhost:8000`.
 
 ---
 
