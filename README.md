@@ -8,7 +8,7 @@
 
 ## 📌 Overview
 
-This project explores hyper-localized Voice AI using the ElevenLabs platform. By carefully crafting system prompts and tool constraints, this agent acts as "Prafful," a warm and lively host who speaks entirely in the Telugu language (తెలుగు లిపి).
+This project explores hyper-localized Voice AI using Groq (for LLM and Whisper STT) and Sarvam AI (for Telugu TTS). By carefully crafting system prompts and tool constraints, this agent acts as "Prafful," a warm and lively host who speaks entirely in the Telugu language (తెలుగు లిపి).
 
 It is designed to gracefully handle edge cases, translate Telugu temporal words (like "repu" for tomorrow) into ISO dates, and securely pass these to a backend API.
 
@@ -16,7 +16,7 @@ It is designed to gracefully handle edge cases, translate Telugu temporal words 
 
 ```mermaid
 graph TD
-    A[User Speaks Telugu] --> B(ElevenLabs Voice Agent)
+    A[User Speaks Telugu] --> B(Groq/Sarvam Voice Agent)
     B --> C{Parse Intent}
     C -- "Needs Booking" --> D[Extract: Name, Date, Time, Size, Phone]
     D --> E[Translate Temporal Words to YYYY-MM-DD]
