@@ -60,5 +60,5 @@ graph TD
 ---
 
 <div align="center">
-  <i>Built with ❤️ by Prafful, with some assistance from Antigravity.</i>
+  <i>Built with ❤️ by Prafful.</i>
 </div>
